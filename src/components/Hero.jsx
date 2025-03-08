@@ -1,8 +1,10 @@
 'use client'
 import Image from 'next/image'
 import { heroIcons } from '@/assets'
+
 import { useMotionValue, useTransform, motion, useSpring } from 'framer-motion'
 import { useState } from 'react'
+import { ReactTyped } from 'react-typed';
  
 const Hero = () => {
     const [windowOffset, setWindowOffset] = useState({innerWidth: 0,innerHeight: 0})
@@ -58,8 +60,13 @@ const Hero = () => {
                         </motion.span>
                     </motion.div>
                 </div>
-                <h1 className='text-center text-3xl font-bold tracking-wider text-gray-500 sm:text-2xl'>My Name is April Dae Bation &</h1>
-                <p className='text-center text-lg tracking-wider text-gray-700'>I like software development</p>
+                <ReactTyped className='text-center text-6xl font-bold tracking-wider text-yellow-500' 
+                   strings={[
+                    "<span class='text-gray-500 font-semibold'>hi, </span> <span class='text-yellow-500 font-semibold'>april dae</span> <span class='text-gray-500 font-semibold'>here.</span>"
+                   ]}
+                   typeSpeed={100} backSpeed={50} backDelay={500} startDelay={500} loop={false}
+                />
+                <p className='mt-2 text-center text-4xl tracking-wider text-gray-400'>I like software development.</p>
                 <div className='mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl'>
                     {heroIcons.map((icon, i) => (
                         <a href='#' key={i} className='hover:bg-red-400 hover:text-white transition-colors rounded-lg'>
