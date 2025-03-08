@@ -1,5 +1,6 @@
 'use client'
 import Image from 'next/image'
+import HeroImage from "./sub/HeroImage"
 import { heroIcons } from '@/assets'
 
 import { useMotionValue, useTransform, motion, useSpring } from 'framer-motion'
@@ -41,19 +42,14 @@ const Hero = () => {
                             rotateY: mouseMove ? rotateY : 0, 
                             transition: '0.1s'
                         }}>
-                        <Image 
-                            src={'/bear.png'} 
-                            alt='Person Image' 
-                            width={400} height={400} 
-                            priority={true} 
-                            className='h-auto w-[150]'/>
+                        <HeroImage />
                         <motion.span 
                             className='absolute text-3l font-semibold text-white' 
                             initial={{scale:0}} 
                             animate={{
                                 opacity: buttonHover ? 0: 1, 
                                 scale: buttonHover? 2:0, 
-                                y: buttonHover ? -40 : 0
+                                y: buttonHover ? -20 : 0
                             }}
                             transition={{opacity: {delay:0.4}}}> 
                             Hi
