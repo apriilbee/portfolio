@@ -1,6 +1,7 @@
 'use client'
-import { moonIcon, sunIcon } from "@/assets"
 import { useState, useEffect } from "react"
+import AnimatedToggleIcon from "./AnimatedToggleIcon"
+import { moonIcon, sunIcon } from "@/assets"
 
 const Toggle = ({ children }) => {
     const [darkTheme, setDarkTheme] = useState(false)
@@ -33,9 +34,7 @@ const Toggle = ({ children }) => {
                         className="fixed right-14 sm:right-10 top-10 text-yellow-600 hover:text-yellow-500"
                         onClick={toggleTheme}
                     >
-                        <span className="absolute block rounded-full bg-zinc-50 p-1 text-4xl left-[-15px]">
-                            {darkTheme ? sunIcon : moonIcon}
-                        </span>
+                        <AnimatedToggleIcon icon={darkTheme ? sunIcon : moonIcon} />
                     </button>
                     {children}
                 </div>
