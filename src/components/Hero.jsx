@@ -56,18 +56,26 @@ const Hero = () => {
                         </motion.span>
                     </motion.div>
                 </div>
-                <ReactTyped className='text-center text-6xl font-bold tracking-wider text-yellow-500' 
-                   strings={[
-                    "<span class='text-gray-500 font-semibold'>hi, </span> <span class='text-yellow-500 font-semibold'>april dae</span> <span class='text-gray-500 font-semibold'>here.</span>"
-                   ]}
-                   typeSpeed={100} backSpeed={50} backDelay={500} startDelay={500} loop={false}
-                />
-                <p className='mt-2 text-center text-4xl tracking-wider text-gray-400'>i like software development,</p>
-                <p className='mt-2 text-center text-2xl tracking-wider text-gray-200'>i think.</p>
+                <div className="text-center">
+                    <ReactTyped 
+                        className="hero-custom-heading font-bold tracking-wider text-yellow-500" 
+                        strings={[
+                            "<span class='text-gray-500 font-semibold'>hi, </span> <span class='text-yellow-500 font-semibold'>april dae</span> <span class='text-gray-500 font-semibold'>here.</span>"
+                        ]}
+                        typeSpeed={100} 
+                        backSpeed={50} 
+                        backDelay={500} 
+                        startDelay={500} 
+                        loop={false}
+                    />
+                </div>
+
+                <p className='text-center hero-custom-sub-heading tracking-wide text-gray-400'>i like software development,</p>
+                <p className='text-center hero-text tracking-wider text-gray-200'>i think.</p>
                 <div className='mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl'>
-                    {heroIcons.map((icon, i) => (
-                        <a href='#' key={i} className='hover:bg-red-400 hover:text-white transition-colors rounded-lg'>
-                            {icon}
+                    {heroIcons.map((item, i) => (
+                        <a href={item.url} key={i} className='hover:bg-red-400 hover:text-white transition-colors rounded-lg'>
+                            {item.icon}
                         </a>
                     ))}
                 </div>

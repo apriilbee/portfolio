@@ -5,3 +5,15 @@ html {
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@media (min-width: 1280px) {
+    .hero-custom-heading {
+        font-size: 3.75rem;
+    }
+    .hero-custom-sub-heading {
+        font-size: 2.25rem;
+    }
+    .hero-text {
+        font-size: 1.5rem;
+    }
+}

@@ -3,9 +3,15 @@ import InstagramLineIcon from "remixicon-react/InstagramLineIcon";
 import FacebookLineIcon from "remixicon-react/FacebookCircleLineIcon";
 import YoutubeLineIcon from "remixicon-react/YoutubeLineIcon";
 import GithubLineIcon from "remixicon-react/GithubLineIcon";
+import LinkedInLineIcon from "remixicon-react/LinkedinBoxLineIcon";
 
-export const heroIcons = [<InstagramLineIcon />, <FacebookLineIcon />, <YoutubeLineIcon />, <GithubLineIcon />];
-
+export const heroIcons = [
+    { icon: <GithubLineIcon />, url: "https://github.com/apriilbee" },
+    { icon: <LinkedInLineIcon />, url: "https://www.linkedin.com/in/april-dae-bation-974688193" },
+    { icon: <YoutubeLineIcon />, url: "https://www.youtube.com/@aprildaebation" },
+    { icon: <InstagramLineIcon />, url: "https://www.instagram.com/avrilaholic" },
+    { icon: <FacebookLineIcon />, url: "https://www.facebook.com/apriilbee" },
+];
 //Toggle Section
 import MoonIcon from "remixicon-react/MoonFoggyFillIcon";
 import SunIcon from "remixicon-react/SunFoggyFillIcon";

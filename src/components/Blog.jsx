@@ -2,9 +2,9 @@ import Heading from "./sub/Heading";
 
 const Blog = () => {
   return (
-    <div id="blog" className="min-h-screen flex flex-col items-center justify-center">
-      <Heading text={"From the Blog"} />
+    <div id="blog" className="min-h-screen grid flex-col items-center justify-center">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <Heading text={"From the Blog"} />
         <div className="mx-auto grid grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3">
           <article className="flex max-w-xl flex-col items-start justify-between">
             <div className="flex items-center gap-x-4 text-xs">

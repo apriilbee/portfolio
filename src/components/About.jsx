@@ -7,15 +7,15 @@ import { aboutData, aboutText, downloadIcon  } from "@/assets"
 
 const About = () => {
   return (
-    <div id="about" className="min-h-screen flex flex-col items-center justify-center">
+    <div id="about" className="min-h-screen py-30 px-30 grid flex flex-col items-center justify-center">
       <Heading text={"About Me"} />
-      <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-x-10"> 
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-x-10"> 
         <Image 
           src={'/bear.png'} 
           alt="About Image" 
-          width={400} 
-          height={400} 
-          className="w-[250px] sm:w-[300px] md:w-[400px]"
+          width={300} 
+          height={300} 
+          className="w-300px "
         />
         <div className="relative max-w-full sm:max-w-[800px] w-full rounded-xl bg-zinc-100 p-5 text-justify mt-6 sm:mt-0">
           <p className="text-lg font-light text-gray-700 first-letter:pl-3 lg:text-[16px] sm:text-[14px]">
@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </div>
       </div>
-
+  
       <div className="mt-20 w-full flex flex-wrap items-center justify-center sm:justify-between gap-x-7 gap-y-10"> 
         {aboutData.map((item, i) =>  
           <Achievements key={i} title={item.title} amount={item.amount}>
@@ -41,7 +41,7 @@ const About = () => {
         )}
       </div>
     </div>
-  )
+  )  
 }
 
 export default About
