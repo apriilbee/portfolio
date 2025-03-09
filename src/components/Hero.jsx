@@ -62,7 +62,8 @@ const Hero = () => {
                    ]}
                    typeSpeed={100} backSpeed={50} backDelay={500} startDelay={500} loop={false}
                 />
-                <p className='mt-2 text-center text-4xl tracking-wider text-gray-400'>I like software development.</p>
+                <p className='mt-2 text-center text-4xl tracking-wider text-gray-400'>i like software development,</p>
+                <p className='mt-2 text-center text-2xl tracking-wider text-gray-200'>i think.</p>
                 <div className='mt-8 flex justify-center gap-x-10 text-3xl text-yellow-600 sm:text-2xl'>
                     {heroIcons.map((icon, i) => (
                         <a href='#' key={i} className='hover:bg-red-400 hover:text-white transition-colors rounded-lg'>

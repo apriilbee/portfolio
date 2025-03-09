@@ -3,7 +3,7 @@ import { navbarData, copyRightIcon } from "@/assets"
 
 const Navbar = ({ id }) => {
   return (
-    <div className="h-full fixed left-0 top-0 flex flex-col justify-between border-r border-gray-200 px-4 py-10 z-10">
+    <div className="h-full fixed left-0 top-0 flex-col justify-between border-r border-gray-200 px-4 py-10 z-10 hidden sm:flex">
         <a href="/#home">
             <span className="text-3xl font-semibold text-red-400">A</span>. <span className="block dark:text-white w-min rotate-90 origin-bottom text-[12px] semibold">Bation</span>.
         </a>
