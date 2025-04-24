@@ -4,6 +4,8 @@ import About from "@/components/About";
 import Blog from "@/components/Blog";
 import Navbar from "@/components/Navbar";
 import Toggle from "@/components/sub/Toggle";
+import Experience from "@/components/Experience";
+import Contact from "@/components/Contact";
 
 import { useState, useRef, useEffect } from "react";
 
@@ -24,7 +26,7 @@ export default function Home() {
                 });
             },
             {
-                threshold: 0.3,
+                threshold: 0.1,
                 rootMargin: "0px 0px -30% 0px",
             }
         );
@@ -42,10 +44,22 @@ export default function Home() {
         <>
             <Toggle>
                 <Navbar id={id} />
-                <div className="w-full" ref={compsRef}>
-                    <Hero />
-                    <About />
-                    <Blog />
+                <div className="w-full pt-20" ref={compsRef}>
+                    <div id="home">
+                        <Hero />
+                    </div>
+                    <div id="about">
+                        <About />
+                    </div>
+                    <div id="experience">
+                        <Experience />
+                    </div>
+                    <div id="blog">
+                        <Blog />
+                    </div>
+                    <div id="contact">
+                        <Contact />
+                    </div>
                 </div>
             </Toggle>
         </>
